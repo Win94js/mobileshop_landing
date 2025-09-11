@@ -4,7 +4,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import HandymanIcon from '@mui/icons-material/Handyman';
 
 
-function whatDoWeDo() {
+function WhatDoWeDo() {
     return (  
         <div className='w-full max-h-[650px] text-white  bg-blue-900 m-auto p-8 text-[.75rem] md:text-[.95rem]'>
            
@@ -72,4 +72,4 @@ function whatDoWeDo() {
     );
 }
 
-export default whatDoWeDo;
+export default WhatDoWeDo;

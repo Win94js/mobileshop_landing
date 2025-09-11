@@ -38,6 +38,10 @@ function Services() {
   const handleTouchStart = (e) => {
     touchStartY.current = e.touches[0].clientY;
   };
+  const handleTouchMove = (e) => {
+    // Prevent whole page from scrolling while swiping inside carousel
+    e.preventDefault();
+  };
 
   const handleTouchEnd = (e) => {
     if (!touchStartY.current) return;
@@ -69,11 +73,13 @@ function Services() {
 
     // Mobile
     carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
+    carousel.addEventListener("touchmove", handleTouchMove, { passive: false });
     carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
 
     return () => {
       carousel.removeEventListener("wheel", handleScroll);
       carousel.removeEventListener("touchstart", handleTouchStart);
+      carousel.removeEventListener("touchmove", handleTouchMove);
       carousel.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
@@ -95,6 +101,7 @@ function Services() {
             src={servicImg}
             alt="service img"
             className="object-contain w-full h-full"
+            loading="lazy"
           />
         </div>
 

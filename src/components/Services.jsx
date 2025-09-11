@@ -85,7 +85,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="service-section relative bg-white bg-[url('./assets/Photos/service-example.jpg')] bg-center bg-no-repeat bg-cover
+    <div className="service-section relative bg-white bg-[url('./assets/Photos/service-example5.jpg')] bg-center bg-no-repeat bg-cover
                  min-w-[320px] min-h-[320px] m-auto p-4 text-white">
       <div className="overlay-service-layer z-10 absolute inset-0 h-full w-full bg-[linear-gradient(20deg,rgba(1,1,18,0.7)_55%,rgba(22,29,56,0.6)_100%)]"></div>
       <div className="z-20 relative">

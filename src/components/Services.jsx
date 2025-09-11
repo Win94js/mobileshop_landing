@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import ConstructionIcon from "@mui/icons-material/Construction";
-import servicImg from "../assets/Photos/service-example.jpg";
+import servicImg from "../assets/Photos/service-example9.jpg";
 
 const serviceLists = [
   { serviceList: "Touch/Glass သီးသန့်လဲပေးခြင်း" },
@@ -85,8 +85,11 @@ function Services() {
   }, []);
 
   return (
-    <div className="service-section bg-blue-900 min-w-[320px] min-h-[320px] m-auto p-4 text-white">
-      <h3 className="text-[2.4rem] font-bold text-center mt-[2.4rem]">
+    <div className="service-section relative bg-white bg-[url('./assets/Photos/service-example.jpg')] bg-center bg-no-repeat bg-cover
+                 min-w-[320px] min-h-[320px] m-auto p-4 text-white">
+      <div className="overlay-service-layer z-10 absolute inset-0 h-full w-full bg-[linear-gradient(20deg,rgba(1,1,18,0.7)_55%,rgba(22,29,56,0.6)_100%)]"></div>
+      <div className="z-20 relative">
+        <h3 className="text-[2.4rem] font-bold text-center mt-[2.4rem]">
         We Bring Your Phone Back to Life
       </h3>
       <p className="text-[.95rem] text-center">
@@ -96,7 +99,7 @@ function Services() {
 
       <div className="flex justify-center flex-col md:flex-row lg:flex-row items-center m-auto mt-[32px]">
         {/* Service Image */}
-        <div className="min-w-[300px] md:w-[420px] m-auto flex overflow-hidden rounded-2xl">
+        <div className="min-w-[300px] md:w-[420px] m-auto flex overflow-hidden rounded-[5px]">
           <img
             src={servicImg}
             alt="service img"
@@ -127,13 +130,13 @@ function Services() {
                 <div
                   key={index}
                   className={`absolute top-[40%] left-1/2 min-w-[300px] lg:w-[480px] h-[180px] -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out 
-                    ${style} flex flex-col items-center justify-center bg-white/80 backdrop-blur-sm rounded-lg 
-                    shadow-lg border-2 border-black group hover:bg-black`}
+                    ${style} flex flex-col items-center justify-center bg-[#bbc4cb76] backdrop-blur-sm rounded-lg 
+                    shadow-lg`}
                 >
-                  <span className="flex items-center p-3 border-2 bg-white text-blue-900 group-hover:text-white group-hover:bg-blue-900">
+                  <span className="flex items-center p-3 border-2 bg-white text-blue-900 ">
                     <ConstructionIcon />
                   </span>
-                  <span className="text-[.95rem] text-center text-black font-semibold mt-2 group-hover:text-white">
+                  <span className="text-[.95rem] text-center text-black font-semibold mt-2 ">
                     {list.serviceList}
                   </span>
                 </div>
@@ -142,6 +145,8 @@ function Services() {
           </div>
         </div>
       </div>
+      </div>
+      
     </div>
   );
 }

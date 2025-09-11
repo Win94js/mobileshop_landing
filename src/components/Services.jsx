@@ -87,7 +87,7 @@ function Services() {
                 <span className="flex items-center p-3 rounded-[0] border-2 bg-white text-blue-900 group-hover:text-white group-hover:bg-blue-900">
                   <ConstructionIcon />
                 </span>
-                <span className="text-[.95rem] text-center text-black font-semibold font-medium mt-2 h-[24px] group-hover:text-white">
+                <span className="text-[.95rem] text-center text-black font-semibold mt-2 h-[24px] group-hover:text-white">
                   {list.serviceList}
                 </span>
               </div>

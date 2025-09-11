@@ -4,8 +4,8 @@ import Nav from "./components/Nav"
 import Sale from "./components/Sale"
 import Services from "./components/Services"
 import Testimonial from "./components/Testimonial"
-import About from "./components/about"
-import What from "./components/whatDoWeDo"
+import About from "./components/About"
+import What from "./components/WhatDoWeDo"
 
 
 function App() {

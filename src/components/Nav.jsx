@@ -1,6 +1,6 @@
 function Nav (){
     return (
-        <nav className=" flex justify-between items-center bg-blue-900">
+        <nav className=" flex justify-between items-center bg-blue-900 text-white">
             <div className="m-3"> <span className="text-2xl font-bold  ">Logo</span></div>
             <div className=" flex justify-between items-center ">
               

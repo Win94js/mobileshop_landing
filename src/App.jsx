@@ -7,6 +7,8 @@ import Testimonial from "./components/Testimonial"
 import About from "./components/About"
 import WhatDoWeDo from "./components/WhatDoWeDo"
 import WhyChooseUs from "./components/WhyChooseUs"
+import Partner from "./components/Partner"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -29,8 +31,9 @@ function App() {
        <Testimonial/>
        <Branches/>
        <About/>
-        
-        <h1 className='text-3xl font-bold underline text-green-200'>Hello world</h1>
+       <Partner/>
+        <Footer/>
+      
       </div>
     </>
   )

@@ -33,10 +33,10 @@ const chooseUs = [
 
 function WhyChooseUs() {
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white w-full min-h-[650px] flex flex-col items-center  m-auto p-8">
       {/* Section Header */}
       <div className="text-center max-w-xl mx-auto mb-10">
-        <h2 className="text-3xl font-bold text-gray-800">Why Choose Us?</h2>
+        <h2 className="text-[2.4rem] font-bold mt-[2.4rem] text-gray-800">Why Choose Us?</h2>
         <p className="text-gray-600 mt-4">
           We deliver quality, speed, and trusted services to ensure the best experience for our customers.
         </p>
@@ -52,8 +52,8 @@ function WhyChooseUs() {
               className="choose-card bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center cursor-pointer"
               initial={{ opacity: 0, y: 50 }}         // start hidden
               whileInView={{ opacity: 1, y: 0 }}      // fade in on scroll
-              viewport={{ once: true, amount: 0.2 }}  // trigger when 20% visible
-              transition={{ duration: 0.6, delay: idx * 0.2 }}
+              viewport={{ once: false, amount: 0.2 }}  // trigger when 20% visible
+              transition={{ duration: 0.3, delay: idx * 0.2 }}
               whileTap={{ scale: 0.95 }}              // animate on touch/click
               whileHover={{ scale: 1.05 }}            // animate on hover (desktop)
             >

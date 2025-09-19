@@ -10,6 +10,7 @@ const branches = [
     salesNumber: "09-979 505 053",
     serviceNumber: "09-400 304 414",
     moneyTransfer: "09-444702232",
+    mapLink: "https://maps.app.goo.gl/j1F6VWapEkwNWmneA",
   },
   {
     shopImg: branch_1_img,
@@ -18,6 +19,7 @@ const branches = [
     salesNumber: "09 -680 756 648",
     serviceNumber: "09-965 761 522",
     moneyTransfer: " 09-456099223",
+    mapLink: "https://maps.app.goo.gl/j1F6VWapEkwNWmneA",
   },
   {
     shopImg: branch_1_img,
@@ -26,6 +28,7 @@ const branches = [
     salesNumber: "09-777 763 776",
     serviceNumber: "09-694 848 304",
     moneyTransfer: "09-444702232",
+    mapLink: "https://maps.app.goo.gl/j1F6VWapEkwNWmneA",
   },
   {
     shopImg: branch_1_img,
@@ -35,12 +38,16 @@ const branches = [
     salesNumber: "09-771000993",
     serviceNumber: "09-669942883",
     moneyTransfer: "09-771000993",
+    mapLink: "https://maps.app.goo.gl/j1F6VWapEkwNWmneA",
   },
 ];
 
 function Branches() {
   return (
-    <div className="bg-white text-gray-900 min-h-[720px] px-6 py-12">
+    <div
+      id="branches"
+      className="bg-white text-gray-900 min-h-[720px] px-6 py-12"
+    >
       {/* Title */}
       <motion.h3
         className="text-3xl md:text-4xl font-bold text-center"
@@ -86,34 +93,47 @@ function Branches() {
             </div>
 
             {/* Info */}
-            <ul className="flex flex-col gap-2 text-gray-700 text-[0.95rem]">
-              <li className="flex items-center gap-3 font-semibold text-lg text-gray-900">
-                <Store strokeWidth={1.4} className="w-[22px] h-[22px]" />
-                {branch.shop}
-              </li>
-              <li className="flex items-center gap-3">
-                <MapPin strokeWidth={1.4} className="w-[20px] h-[20px]" />
-                <span>{branch.address}</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
-                <span>
-                  <b>Sales:</b> {branch.salesNumber}
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
-                <span>
-                  <b>Service:</b> {branch.serviceNumber}
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
-                <span>
-                  <b>Money Transfer:</b> {branch.moneyTransfer}
-                </span>
-              </li>
-            </ul>
+            <div className="flex flex-col justify-between h-full">
+              <ul className="flex flex-col gap-2 text-gray-700 text-[0.95rem]">
+                <li className="flex items-center gap-3 font-semibold text-lg text-gray-900">
+                  <Store strokeWidth={1.4} className="w-[22px] h-[22px]" />
+                  {branch.shop}
+                </li>
+                <li className="flex items-center gap-3">
+                  <MapPin strokeWidth={1.4} className="w-[20px] h-[20px]" />
+                  <span>{branch.address}</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
+                  <span>
+                    <b>Sales:</b> {branch.salesNumber}
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
+                  <span>
+                    <b>Service:</b> {branch.serviceNumber}
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone strokeWidth={1.4} className="w-[20px] h-[20px]" />
+                  <span>
+                    <b>Money Transfer:</b> {branch.moneyTransfer}
+                  </span>
+                </li>
+              </ul>
+
+              {/* Google Map Link */}
+              <a
+                href={branch.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-sm text-blue-600 font-semibold hover:text-blue-800 hover:underline"
+              >
+                <MapPin className="w-[18px] h-[18px]" strokeWidth={1.6} />
+                View on Map
+              </a>
+            </div>
           </motion.div>
         ))}
       </div>

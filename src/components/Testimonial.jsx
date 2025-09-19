@@ -43,6 +43,7 @@ function Testimonial() {
 
   return (
     <div
+      id="testimonial"
       className="review-section relative min-w-[320px] min-h-[480px] 
         bg-center bg-cover bg-no-repeat m-0
         bg-[url('./assets/Photos/customersImg.jpg')]"

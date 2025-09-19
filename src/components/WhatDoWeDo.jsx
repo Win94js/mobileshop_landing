@@ -24,13 +24,13 @@ const weDo = [
 
 function WhatDoWeDo() {
     return (  
-        <div className='w-full max-h-[650px] text-white  bg-blue-900 m-auto p-8 text-[.75rem] md:text-[.95rem]'>
+        <div id='whatWeDo' className='w-full max-h-[650px] text-white  bg-blue-900 m-auto p-8 text-[.75rem] md:text-[.95rem]'>
            
             <div className=' mt-[2.4rem] flex flex-col justify-center items-center '>
                 
                 
                 <h2 className='text-[2.4rem] font-bold'>What do we do</h2>
-                <div className='w-[90%] mt-[26px] grid grid-cols-2 grid-rows-2 md:flex flex-wrap  justify-around '>
+                <div className='w-[100%] mt-[26px] grid grid-cols-2 grid-rows-2 md:flex flex-wrap  justify-around '>
                     {
                     weDo.map((list,idx) => (
                         <motion.div  key={idx} className='max-w-[280px] max-h-[280px] p-2 pb-4 mx-[10px] mt-[20px] 

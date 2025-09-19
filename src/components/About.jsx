@@ -2,7 +2,7 @@ import heroImg2 from '../assets/Photos/HeroImg.png';
 
 function About() {
   return (
-    <div className="w-full min-h-[650px] flex flex-col items-center text-white bg-blue-900 m-auto p-8">
+    <div id='about' className="w-full min-h-[650px] flex flex-col items-center text-white bg-blue-900 m-auto p-8">
       <h2 className="text-[2.4rem] font-bold mt-[2.4rem]">About Us</h2>
 
       <div className="w-[90%] flex my-[3rem] items-center flex-col lg:flex-row gap-8">

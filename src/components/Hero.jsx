@@ -38,7 +38,8 @@ function Hero() {
 
 
           {/* CTA Button */}
-          <button
+          <a
+            href="#whatWeDo"
             className="px-6 py-3 
                        bg-[rgba(37,164,203,0.25)] 
                        rounded-[16px] 
@@ -51,7 +52,7 @@ function Hero() {
                        text-[1rem] md:text-[1.2rem]"
           >
             Start Now
-          </button>
+          </a>
         </div>
       </div>
     </div>

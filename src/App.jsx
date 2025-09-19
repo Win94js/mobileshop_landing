@@ -9,6 +9,7 @@ import WhatDoWeDo from "./components/WhatDoWeDo"
 import WhyChooseUs from "./components/WhyChooseUs"
 import Partner from "./components/Partner"
 import Footer from "./components/Footer"
+import ContactUs from "./components/ContactUs"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
        <Testimonial/>
        <Branches/>
        <About/>
+       <ContactUs/>
        <Partner/>
         <Footer/>
       

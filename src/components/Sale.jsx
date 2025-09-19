@@ -35,7 +35,7 @@ const whatWedo = [
 
 function Sale() {
   return (
-    <div className="w-full min-h-[550px] flex flex-col text-black bg-neutral-100 m-auto p-8 text-[.75rem] md:text-[.95rem]">
+    <div id='sale' className="w-full min-h-[550px] flex flex-col text-black bg-neutral-100 m-auto p-8 text-[.75rem] md:text-[.95rem]">
       
       <div className="sale-text-img flex flex-col md:flex-row justify-between items-center m-auto gap-2">
         

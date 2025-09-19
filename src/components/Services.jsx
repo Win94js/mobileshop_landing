@@ -37,6 +37,7 @@ function Services() {
   // Touch swipe (mobile)
   const handleTouchStart = (e) => {
     touchStartY.current = e.touches[0].clientY;
+    console.log('touchY',touchStartY.current)
   };
   const handleTouchMove = (e) => {
     // Prevent whole page from scrolling while swiping inside carousel
@@ -85,7 +86,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="service-section relative bg-white bg-[url('./assets/Photos/service-example5.jpg')] bg-center bg-no-repeat bg-cover
+    <div id="service" className="service-section relative bg-white bg-[url('./assets/Photos/service-example5.jpg')] bg-center bg-no-repeat bg-cover
                  min-w-[320px] min-h-[320px] m-auto p-4 text-white">
       <div className="overlay-service-layer z-10 absolute inset-0 h-full w-full bg-[linear-gradient(20deg,rgba(1,1,18,0.8)_55%,rgba(22,29,56,0.6)_100%)]"></div>
       <div className="z-20 relative">
@@ -97,7 +98,7 @@ function Services() {
         modi.
       </p>
 
-      <div className="flex justify-center flex-col md:flex-row lg:flex-row items-center m-auto mt-[32px]">
+      <div className="flex justify-center text-center flex-col md:flex-row lg:flex-row items-center m-auto mt-[32px]">
         {/* Service Image */}
         <div className="min-w-[300px] md:w-[420px] m-auto flex overflow-hidden rounded-[5px]">
           <img

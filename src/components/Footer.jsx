@@ -20,12 +20,16 @@ function Footer() {
       {/* Menu */}
       <div className="menu-box mb-4">
         <ul className="flex flex-wrap justify-center gap-6 ">
-          <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-          <li><a href="#" className="hover:text-blue-400">Services</a></li>
+          <li><a href="#about" className="hover:text-blue-400">About Us</a></li>
+          <li><a href="#services" className="hover:text-blue-400">Services</a></li>
           <li><a href="#" className="hover:text-blue-400">Home</a></li>
-          <li><a href="#" className="hover:text-blue-400">FAQ</a></li>
-          <li><a href="#" className="hover:text-blue-400">Shop</a></li>
-          <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
+          <li><a href="#faq" className="hover:text-blue-400">FAQ</a></li>
+          <li><a href="#sale" className="hover:text-blue-400">Sale</a></li>
+          <li><a href="#contact" className="hover:text-blue-400">Contact Us</a></li>
+          <li><a href="#branches" className="hover:text-blue-400">Branches</a></li>
+          <li><a href="#testimonial" className="hover:text-blue-400">Testimonials</a></li>
+          
+
         </ul>
       </div>
 
@@ -54,6 +58,12 @@ function Footer() {
         <a href="#" className="hover:text-gray-500">
           <FontAwesomeIcon icon={faTiktok} />
         </a>
+      </div>
+      <div className="terms menu-box m-2 text-sm text-gray-300">
+        <ul className="flex flex-wrap justify-center gap-6">
+          <li><a href="#privacy" className="hover:text-blue-400">Privacy & Policy</a></li>
+          <li><a href="#condition" className="hover:text-blue-400">Terms and Conditions</a></li>
+        </ul>
       </div>
       {/* Copyright */}
       <div className="text-center text-lg text-gray-400 mt-2">
